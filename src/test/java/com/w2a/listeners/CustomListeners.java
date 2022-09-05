@@ -113,15 +113,12 @@ public class CustomListeners extends TestBase implements ITestListener,ISuiteLis
 			e.printStackTrace();
 		}
 	
-		try {
-			mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
-		} catch (AddressException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (MessagingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		/*
+		 * try { // mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to,
+		 * TestConfig.subject, messageBody); } catch (AddressException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); } catch (MessagingException
+		 * e) { // TODO Auto-generated catch block e.printStackTrace(); }
+		 */
 
 		
 	}
