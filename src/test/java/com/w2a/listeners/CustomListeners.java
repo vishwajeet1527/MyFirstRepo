@@ -31,7 +31,8 @@ import com.w2a.utilities.TestUtil;
 public class CustomListeners extends TestBase implements ITestListener,ISuiteListener {
 
 	static Date d = new Date();
-	static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
+	//static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
+	static String fileName = "Extent_.html";
 	static String messageBody;
 	private static ExtentReports extent = ExtentManager.createInstance(System.getProperty("user.dir")+"\\reports\\"+fileName);
 	public static ThreadLocal<ExtentTest> testReport = new ThreadLocal<ExtentTest>();
